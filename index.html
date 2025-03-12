@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shannon Game & Perplexity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shannon Game - Perplexity Testi</h1>
+        <textarea id="textInput" placeholder="Bir metin giriniz..."></textarea>
+        <button onclick="startGame()">Başlat</button>
+
+        <div id="gameArea" class="hidden">
+            <p id="question"></p>
+            <input type="text" id="answer" placeholder="Tahmininizi yazın">
+            <button onclick="checkAnswer()">Tahmin Et</button>
+            <p id="result"></p>
+            <p id="perplexity"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

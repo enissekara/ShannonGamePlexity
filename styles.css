@@ -1,0 +1,125 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Genel Sayfa Stili */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: url('https://source.unsplash.com/1600x900/?galaxy,stars') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Oyun Konteyneri */
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.8s ease-in-out;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Başlık */
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Metin Girişi ve Input */
+textarea, input {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    transition: 0.3s;
+    color: white;
+    text-align: center;
+    outline: none;
+}
+
+/* Metin Alanına Tıklayınca Efekt */
+textarea:focus, input:focus {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Buton Stili */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 75, 43, 0.5);
+}
+
+/* Butona Hover Efekti */
+button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    box-shadow: 0px 10px 25px rgba(255, 75, 43, 0.8);
+}
+
+/* Oyun Alanı */
+#gameArea {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Yanıt ve Perplexity Sonuçları */
+#result, #perplexity {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Doğru Yanıt */
+.correct {
+    background: rgba(76, 175, 80, 0.5);
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Yanlış Yanıt */
+.wrong {
+    background: rgba(244, 67, 54, 0.5);
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Fade In Animasyonu */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
